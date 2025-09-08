@@ -12,7 +12,7 @@ export default function Home() {
           Coming soon
         </div>
         <p className="mt-8 text-xs sm:text-sm text-black/50 dark:text-white/50">
-          For inquiries: <a href="mailto:hello@icicheritage.com" className="underline accent-underline">hello@icicheritage.com</a>
+          For inquiries: <a href="mailto:hello@icicheritageltd.com" className="underline accent-underline">hello@icicheritageltd.com</a>
         </p>
       </div>
     </main>
