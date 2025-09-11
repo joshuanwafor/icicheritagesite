@@ -37,27 +37,19 @@ function ProductCard({ product, status }: ProductCardProps) {
     }).format(amount);
   };
 
-  const handleImageLoad = () => {
-    setImageLoaded(true);
-    setImageError(false);
-  };
-
-  const handleImageError = () => {
-    setImageError(true);
-    setImageLoaded(false);
-  };
-
   return (
-    <div className="bg-white shadow-lg hover:shadow-xl transition-shadow duration-300 group">
-     
-     <div  style={{
-      paddingTop: '100%',
-      backgroundImage: `url(${product.primaryPhoto})`,
-      backgroundSize: 'cover',
-      backgroundPosition: 'center',
-      backgroundRepeat: 'no-repeat',
-     }}/>
-  
+    <div className="bg-white shadow-lg hover:shadow-xl transition-all duration-300 group rounded-xl overflow-hidden border border-gray-100">
+
+      <div className="relative overflow-hidden" style={{
+        paddingTop: '100%',
+        backgroundImage: `url(${product.primaryPhoto})`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat',
+      }}>
+        <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+      </div>
+
       {/* Product Info */}
       <div className="p-6">
         <h3 className="font-cinzel text-lg font-semibold text-black mb-2 truncate">
@@ -73,16 +65,34 @@ function ProductCard({ product, status }: ProductCardProps) {
             {formatPrice(product.amount)}
           </span>
         </div>
+
+        {/* In-Store Purchase Notice */}
+        <div className="mb-4 p-3 bg-gradient-to-r from-[#EDD671]/10 to-[#d4c05a]/10 rounded-lg border border-[#EDD671]/20">
+          <div className="flex items-center space-x-2">
+            <svg className="w-4 h-4 text-[#5C130C] flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+            </svg>
+            <p className="font-pragmatica text-xs text-[#5C130C] font-medium">
+              Available in-store only
+            </p>
+          </div>
+        </div>
+
         {/* Action Buttons */}
         <div className="flex gap-2">
+          <Link
+            href="/contact"
+            className="flex-1 bg-[#5C130C] text-white py-3 font-pragmatica font-semibold hover:bg-[#170003] transition-colors duration-300 text-center rounded-lg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#5C130C] focus-visible:ring-offset-2"
+          >
+            Visit Store
+          </Link>
           <button
             disabled={true}
-            className="flex-1 bg-gray-400 text-white py-3 font-pragmatica font-semibold cursor-not-allowed"
+            className="px-4 py-3 border border-gray-300 text-gray-400 cursor-not-allowed rounded-lg"
+            title="Online purchase not available"
           >
-            Add to Cart
-          </button>
-          <button disabled={true} className="px-4 py-3 border border-gray-400 text-gray-400 cursor-not-allowed">
-            <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
             </svg>
           </button>
@@ -194,36 +204,54 @@ export default function Collection() {
     <div className="overflow-x-hidden">
       {/* Hero Section */}
       <section className="relative py-20 lg:py-32 bg-gradient-to-br from-[#5C130C] via-[#170003] to-black">
-        <div className="absolute inset-0 opacity-10">
+        <div className="absolute inset-0 opacity-20 brand-gradient">
           <div className="absolute inset-0 bg-gradient-to-br from-[#EDD671]/10 via-transparent to-[#EDD671]/5"></div>
         </div>
 
         <div className="relative z-10 max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
-          <h1 className="font-cinzel text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-6">
+          <p className="font-pragmatica uppercase tracking-[0.3em] text-xs sm:text-sm text-[#EDD671] mb-3 animate-fade-in-up">Our Collection</p>
+          <h1 className="font-cinzel text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-4 animate-fade-in-up">
             Our Luxury <span className="text-[#EDD671]">Collection</span>
           </h1>
-          <p className="font-pragmatica text-lg sm:text-xl text-gray-200 max-w-3xl mx-auto leading-relaxed mb-8">
+          <div className="w-24 h-[2px] bg-[#EDD671] mx-auto mb-6 opacity-80 animate-fade-in-up delay-300"></div>
+          <p className="font-pragmatica text-lg sm:text-xl text-gray-200 max-w-3xl mx-auto leading-relaxed mb-6 animate-fade-in-up delay-600">
             Discover our curated selection of premium home décor and household items, each piece carefully chosen to bring elegance and heritage into your living space.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center text-sm">
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center text-sm animate-fade-in-up delay-900">
             <div className="flex items-center space-x-2 text-[#EDD671]">
-              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
               </svg>
               <span className="font-pragmatica">Premium Quality</span>
             </div>
             <div className="flex items-center space-x-2 text-[#EDD671]">
-              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
               </svg>
-              <span className="font-pragmatica">Fast Delivery</span>
+              <span className="font-pragmatica">In-Store Only</span>
             </div>
             <div className="flex items-center space-x-2 text-[#EDD671]">
-              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
               </svg>
               <span className="font-pragmatica">Authentic Heritage</span>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* In-Store Purchase Notice */}
+      <section className="py-8 bg-gradient-to-r from-[#EDD671] to-[#d4c05a] text-[#170003]">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <div className="flex items-center justify-center space-x-3">
+            <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+            </svg>
+            <p className="font-pragmatica font-semibold text-lg">
+              All items are available for purchase in-store only. Visit our showroom to experience our luxury collection in person.
+            </p>
           </div>
         </div>
       </section>
@@ -235,7 +263,7 @@ export default function Collection() {
             {/* Search Bar */}
             <div className="lg:col-span-2">
               <div className="relative">
-                <svg className="absolute left-3 top-1/2 transform -translate-y-1/2 w-5 h-5 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg className="absolute left-3 top-1/2 transform -translate-y-1/2 w-5 h-5 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
                 </svg>
                 <input
@@ -243,7 +271,7 @@ export default function Collection() {
                   placeholder="Search our collection..."
                   value={searchTerm}
                   onChange={(e) => setSearchTerm(e.target.value)}
-                  className="w-full pl-10 pr-4 py-3 border border-gray-300 focus:ring-2 focus:ring-[#EDD671] focus:border-[#EDD671] outline-none font-pragmatica"
+                  className="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#EDD671] focus:border-[#EDD671] outline-none font-pragmatica transition-all duration-200 hover:border-gray-400"
                 />
               </div>
             </div>
@@ -253,7 +281,7 @@ export default function Collection() {
               <select
                 value={sortBy}
                 onChange={(e) => setSortBy(e.target.value)}
-                className="w-full px-4 py-3 border border-gray-300 focus:ring-2 focus:ring-[#EDD671] focus:border-[#EDD671] outline-none font-pragmatica bg-white"
+                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#EDD671] focus:border-[#EDD671] outline-none font-pragmatica bg-white transition-all duration-200 hover:border-gray-400"
               >
                 <option value="name">Sort by Name</option>
                 <option value="price-low">Price: Low to High</option>
@@ -267,7 +295,7 @@ export default function Collection() {
               <select
                 value={priceRange}
                 onChange={(e) => setPriceRange(e.target.value)}
-                className="w-full px-4 py-3 border border-gray-300 focus:ring-2 focus:ring-[#EDD671] focus:border-[#EDD671] outline-none font-pragmatica bg-white"
+                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#EDD671] focus:border-[#EDD671] outline-none font-pragmatica bg-white transition-all duration-200 hover:border-gray-400"
               >
                 <option value="all">All Prices</option>
                 <option value="under-50k">Under ₦50,000</option>
@@ -287,7 +315,7 @@ export default function Collection() {
               <select
                 value={availabilityFilter}
                 onChange={(e) => setAvailabilityFilter(e.target.value)}
-                className="px-4 py-2 border border-gray-300 focus:ring-2 focus:ring-[#EDD671] focus:border-[#EDD671] outline-none font-pragmatica bg-white text-sm"
+                className="px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#EDD671] focus:border-[#EDD671] outline-none font-pragmatica bg-white text-sm transition-all duration-200 hover:border-gray-400"
               >
                 <option value="all">All Items</option>
                 <option value="in-stock">In Stock Only</option>
@@ -317,7 +345,7 @@ export default function Collection() {
                   setAvailabilityFilter('all');
                   setSortBy('name');
                 }}
-                className="bg-[#EDD671] text-[#5C130C] px-6 py-3 font-pragmatica font-semibold hover:bg-[#d4c05a] transition-colors duration-300"
+                className="bg-[#EDD671] text-[#5C130C] px-6 py-3 font-pragmatica font-semibold hover:bg-[#d4c05a] transition-colors duration-300 rounded-lg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#EDD671] focus-visible:ring-offset-2"
               >
                 Clear All Filters
               </button>
@@ -348,13 +376,15 @@ export default function Collection() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
               href="/contact"
-              className="bg-[#EDD671] text-[#170003] px-8 py-4 font-pragmatica font-semibold text-lg hover:bg-[#d4c05a] transition-colors duration-300"
+              aria-label="Get design consultation and visit our store"
+              className="bg-[#EDD671] text-[#170003] px-8 py-4 font-pragmatica font-semibold text-lg hover:bg-[#d4c05a] transition-colors duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#EDD671] focus-visible:ring-offset-2 focus-visible:ring-offset-[#170003] rounded-lg"
             >
-              Get Design Consultation
+              Visit Our Store
             </Link>
             <Link
               href="/about"
-              className="border-2 border-[#EDD671] text-[#EDD671] px-8 py-4 font-pragmatica font-semibold text-lg hover:bg-[#EDD671] hover:text-[#170003] transition-all duration-300"
+              aria-label="Learn about our heritage story"
+              className="border-2 border-[#EDD671] text-[#EDD671] px-8 py-4 font-pragmatica font-semibold text-lg hover:bg-[#EDD671] hover:text-[#170003] transition-all duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#EDD671] focus-visible:ring-offset-2 focus-visible:ring-offset-[#170003] rounded-lg"
             >
               Learn Our Story
             </Link>

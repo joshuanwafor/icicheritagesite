@@ -5,15 +5,17 @@ export default function About() {
     <div className="overflow-x-hidden">
       {/* Hero Section */}
       <section className="relative py-20 lg:py-32 bg-gradient-to-br from-[#5C130C] via-[#170003] to-black">
-        <div className="absolute inset-0 opacity-10">
+        <div className="absolute inset-0 opacity-20 brand-gradient">
           <div className="absolute inset-0 bg-gradient-to-br from-[#EDD671]/10 via-transparent to-[#EDD671]/5"></div>
         </div>
         
         <div className="relative z-10 max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
-          <h1 className="font-cinzel text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-6">
+          <p className="font-pragmatica uppercase tracking-[0.3em] text-xs sm:text-sm text-[#EDD671] mb-3 animate-fade-in-up">About Us</p>
+          <h1 className="font-cinzel text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-4 animate-fade-in-up">
             Our <span className="text-[#EDD671]">Heritage Story</span>
           </h1>
-          <p className="font-pragmatica text-lg sm:text-xl text-gray-200 max-w-3xl mx-auto leading-relaxed">
+          <div className="w-24 h-[2px] bg-[#EDD671] mx-auto mb-6 opacity-80 animate-fade-in-up delay-300"></div>
+          <p className="font-pragmatica text-lg sm:text-xl text-gray-200 max-w-3xl mx-auto leading-relaxed animate-fade-in-up delay-600">
             Discover the vision, craftsmanship, and passion behind ICIC Heritage — where every piece tells a story of elegance and cultural pride.
           </p>
         </div>
@@ -43,7 +45,7 @@ export default function About() {
             </div>
             
             <div className="relative">
-              <div className="bg-gradient-to-br from-[#5C130C] to-[#170003] p-8 lg:p-12">
+              <div className="bg-gradient-to-br from-[#5C130C] to-[#170003] p-8 lg:p-12 rounded-xl overflow-hidden shadow-2xl ring-1 ring-[#EDD671]/20">
                 <div className="text-center text-white">
                   <div className="font-cinzel text-5xl lg:text-6xl font-bold mb-4">ICIC</div>
                   <div className="font-cinzel text-3xl lg:text-4xl text-[#EDD671] mb-4">Heritage</div>
@@ -72,9 +74,9 @@ export default function About() {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-12">
             {/* Heritage, captured with majesty */}
-            <div className="text-center group">
-              <div className="bg-[#5C130C] w-24 h-24 mx-auto mb-6 flex items-center justify-center group-hover:bg-[#170003] transition-colors duration-300">
-                <svg className="w-12 h-12 text-[#EDD671]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <div className="text-center group p-8 rounded-xl border border-gray-100 bg-white hover:border-[#EDD671]/30 hover:shadow-xl transition-all duration-300">
+              <div className="bg-gradient-to-br from-[#5C130C] to-[#170003] w-24 h-24 mx-auto mb-6 flex items-center justify-center group-hover:scale-110 transition-transform duration-300 rounded-xl">
+                <svg className="w-12 h-12 text-[#EDD671]" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
                 </svg>
               </div>
@@ -86,9 +88,9 @@ export default function About() {
             </div>
 
             {/* Elegance, styled for modern living */}
-            <div className="text-center group">
-              <div className="bg-[#5C130C] w-24 h-24 mx-auto mb-6 flex items-center justify-center group-hover:bg-[#170003] transition-colors duration-300">
-                <svg className="w-12 h-12 text-[#EDD671]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <div className="text-center group p-8 rounded-xl border border-gray-100 bg-white hover:border-[#EDD671]/30 hover:shadow-xl transition-all duration-300">
+              <div className="bg-gradient-to-br from-[#5C130C] to-[#170003] w-24 h-24 mx-auto mb-6 flex items-center justify-center group-hover:scale-110 transition-transform duration-300 rounded-xl">
+                <svg className="w-12 h-12 text-[#EDD671]" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" />
                 </svg>
               </div>
@@ -100,9 +102,9 @@ export default function About() {
             </div>
 
             {/* Luxury, designed to last */}
-            <div className="text-center group">
-              <div className="bg-[#5C130C] w-24 h-24 mx-auto mb-6 flex items-center justify-center group-hover:bg-[#170003] transition-colors duration-300">
-                <svg className="w-12 h-12 text-[#EDD671]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <div className="text-center group p-8 rounded-xl border border-gray-100 bg-white hover:border-[#EDD671]/30 hover:shadow-xl transition-all duration-300">
+              <div className="bg-gradient-to-br from-[#5C130C] to-[#170003] w-24 h-24 mx-auto mb-6 flex items-center justify-center group-hover:scale-110 transition-transform duration-300 rounded-xl">
+                <svg className="w-12 h-12 text-[#EDD671]" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                 </svg>
               </div>
@@ -121,9 +123,9 @@ export default function About() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
             {/* Mission */}
-            <div className="text-center lg:text-left">
-              <div className="inline-flex items-center justify-center w-16 h-16 bg-[#EDD671] mb-6">
-                <svg className="w-8 h-8 text-[#5C130C]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <div className="text-center lg:text-left bg-white p-8 rounded-xl border border-gray-100 shadow-sm">
+              <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-br from-[#EDD671] to-[#d4c05a] mb-6 rounded-xl">
+                <svg className="w-8 h-8 text-[#5C130C]" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
                 </svg>
               </div>
@@ -138,9 +140,9 @@ export default function About() {
             </div>
 
             {/* Vision */}
-            <div className="text-center lg:text-left">
-              <div className="inline-flex items-center justify-center w-16 h-16 bg-[#EDD671] mb-6">
-                <svg className="w-8 h-8 text-[#5C130C]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <div className="text-center lg:text-left bg-white p-8 rounded-xl border border-gray-100 shadow-sm">
+              <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-br from-[#EDD671] to-[#d4c05a] mb-6 rounded-xl">
+                <svg className="w-8 h-8 text-[#5C130C]" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
                 </svg>
@@ -170,13 +172,15 @@ export default function About() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <Link
               href="/collection"
-              className="bg-[#EDD671] text-[#170003] px-8 py-4 font-pragmatica font-semibold text-lg hover:bg-[#d4c05a] transition-colors duration-300 shadow-lg"
+              aria-label="View our luxury collection"
+              className="bg-[#EDD671] text-[#170003] px-8 py-4 font-pragmatica font-semibold text-lg hover:bg-[#d4c05a] transition-colors duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#EDD671] focus-visible:ring-offset-2 focus-visible:ring-offset-[#170003] rounded-lg"
             >
               View Our Collection
             </Link>
             <Link
               href="/contact"
-              className="border-2 border-[#EDD671] text-[#EDD671] px-8 py-4 font-pragmatica font-semibold text-lg hover:bg-[#EDD671] hover:text-[#170003] transition-all duration-300"
+              aria-label="Get in touch with our team"
+              className="border-2 border-[#EDD671] text-[#EDD671] px-8 py-4 font-pragmatica font-semibold text-lg hover:bg-[#EDD671] hover:text-[#170003] transition-all duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#EDD671] focus-visible:ring-offset-2 focus-visible:ring-offset-[#170003] rounded-lg"
             >
               Get in Touch
             </Link>

@@ -34,7 +34,7 @@ export default function Contact() {
         </svg>
       ),
       title: 'Call Us',
-      details: ['+234 805 494 5656', '+234 703 852 1520'],
+      details: ['+234 805 494 5656'],
       action: 'tel:+2348054945656',
       actionText: 'Call Now'
     },
@@ -57,7 +57,7 @@ export default function Contact() {
         </svg>
       ),
       title: 'Visit Us',
-      details: ['ICIC Heritage – Nigeria'],
+      details: ['Yingi, Shaka Rd, Jos, Plateau State, Nigeria'],
       action: null,
       actionText: null
     }
@@ -67,18 +67,20 @@ export default function Contact() {
     <div className="overflow-x-hidden">
       {/* Hero Section */}
       <section className="relative py-20 lg:py-32 bg-gradient-to-br from-[#5C130C] via-[#170003] to-black">
-        <div className="absolute inset-0 opacity-10">
+        <div className="absolute inset-0 opacity-20 brand-gradient">
           <div className="absolute inset-0 bg-gradient-to-br from-[#EDD671]/10 via-transparent to-[#EDD671]/5"></div>
         </div>
         
         <div className="relative z-10 max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
-          <h1 className="font-cinzel text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-6">
+          <p className="font-pragmatica uppercase tracking-[0.3em] text-xs sm:text-sm text-[#EDD671] mb-3 animate-fade-in-up">Contact Us</p>
+          <h1 className="font-cinzel text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-4 animate-fade-in-up">
             Get in <span className="text-[#EDD671]">Touch</span>
           </h1>
-          <p className="font-pragmatica text-lg sm:text-xl text-gray-200 max-w-3xl mx-auto leading-relaxed mb-8">
+          <div className="w-24 h-[2px] bg-[#EDD671] mx-auto mb-6 opacity-80 animate-fade-in-up delay-300"></div>
+          <p className="font-pragmatica text-lg sm:text-xl text-gray-200 max-w-3xl mx-auto leading-relaxed mb-6 animate-fade-in-up delay-600">
             We would love to hear from you. Reach out to discuss your luxury home décor needs or learn more about our heritage collection.
           </p>
-          <p className="font-pragmatica text-base text-[#EDD671] font-medium">
+          <p className="font-pragmatica text-base text-[#EDD671] font-medium animate-fade-in-up delay-900">
             Our team will reach out to you within 24 hours
           </p>
         </div>
@@ -98,8 +100,8 @@ export default function Contact() {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {contactMethods.map((method, index) => (
-              <div key={index} className="text-center group">
-                <div className="bg-[#5C130C] w-20 h-20 mx-auto mb-6 flex items-center justify-center text-[#EDD671] group-hover:bg-[#170003] transition-colors duration-300">
+              <div key={index} className="text-center group p-8 rounded-xl border border-gray-100 bg-white hover:border-[#EDD671]/30 hover:shadow-xl transition-all duration-300">
+                <div className="bg-gradient-to-br from-[#5C130C] to-[#170003] w-20 h-20 mx-auto mb-6 flex items-center justify-center text-[#EDD671] group-hover:scale-110 transition-transform duration-300 rounded-xl">
                   {method.icon}
                 </div>
                 <h3 className="font-cinzel text-2xl font-semibold text-black mb-4">{method.title}</h3>
@@ -113,7 +115,8 @@ export default function Contact() {
                 {method.action && method.actionText && (
                   <Link
                     href={method.action}
-                    className="inline-block bg-[#EDD671] text-[#5C130C] px-6 py-3 font-pragmatica font-semibold hover:bg-[#d4c05a] transition-colors duration-300"
+                    aria-label={`${method.actionText} - ${method.title}`}
+                    className="inline-block bg-[#EDD671] text-[#5C130C] px-6 py-3 font-pragmatica font-semibold hover:bg-[#d4c05a] transition-colors duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#EDD671] focus-visible:ring-offset-2 rounded-lg"
                   >
                     {method.actionText}
                   </Link>
@@ -150,7 +153,7 @@ export default function Contact() {
                       required
                       value={formData.name}
                       onChange={handleChange}
-                      className="w-full px-4 py-3 border border-gray-300 focus:ring-2 focus:ring-[#EDD671] focus:border-[#EDD671] outline-none font-pragmatica"
+                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#EDD671] focus:border-[#EDD671] outline-none font-pragmatica transition-all duration-200 hover:border-gray-400"
                       placeholder="Your full name"
                     />
                   </div>
@@ -164,7 +167,7 @@ export default function Contact() {
                       name="phone"
                       value={formData.phone}
                       onChange={handleChange}
-                      className="w-full px-4 py-3 border border-gray-300 focus:ring-2 focus:ring-[#EDD671] focus:border-[#EDD671] outline-none font-pragmatica"
+                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#EDD671] focus:border-[#EDD671] outline-none font-pragmatica transition-all duration-200 hover:border-gray-400"
                       placeholder="Your phone number"
                     />
                   </div>
@@ -181,7 +184,7 @@ export default function Contact() {
                     required
                     value={formData.email}
                     onChange={handleChange}
-                    className="w-full px-4 py-3 border border-gray-300 focus:ring-2 focus:ring-[#EDD671] focus:border-[#EDD671] outline-none font-pragmatica"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#EDD671] focus:border-[#EDD671] outline-none font-pragmatica transition-all duration-200 hover:border-gray-400"
                     placeholder="your.email@example.com"
                   />
                 </div>
@@ -196,7 +199,7 @@ export default function Contact() {
                     required
                     value={formData.subject}
                     onChange={handleChange}
-                    className="w-full px-4 py-3 border border-gray-300 focus:ring-2 focus:ring-[#EDD671] focus:border-[#EDD671] outline-none font-pragmatica"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#EDD671] focus:border-[#EDD671] outline-none font-pragmatica transition-all duration-200 hover:border-gray-400"
                   >
                     <option value="">Select a subject</option>
                     <option value="general">General Inquiry</option>
@@ -218,14 +221,14 @@ export default function Contact() {
                     rows={6}
                     value={formData.message}
                     onChange={handleChange}
-                    className="w-full px-4 py-3 border border-gray-300 focus:ring-2 focus:ring-[#EDD671] focus:border-[#EDD671] outline-none font-pragmatica resize-vertical"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#EDD671] focus:border-[#EDD671] outline-none font-pragmatica resize-vertical transition-all duration-200 hover:border-gray-400"
                     placeholder="Tell us about your luxury home décor needs..."
                   ></textarea>
                 </div>
 
                 <button
                   type="submit"
-                  className="w-full bg-[#5C130C] text-white px-8 py-4 font-pragmatica font-semibold text-lg hover:bg-[#170003] transition-colors duration-300 shadow-lg"
+                  className="w-full bg-[#5C130C] text-white px-8 py-4 font-pragmatica font-semibold text-lg hover:bg-[#170003] transition-colors duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#EDD671] focus-visible:ring-offset-2 rounded-lg"
                 >
                   Send Message
                 </button>
@@ -235,18 +238,18 @@ export default function Contact() {
             {/* Additional Info & Business Hours */}
             <div className="space-y-12">
               {/* Business Hours */}
-              <div>
+              <div className="bg-white p-8 rounded-xl border border-gray-100 shadow-sm">
                 <h3 className="font-cinzel text-2xl font-bold text-black mb-6">Business Hours</h3>
                 <div className="space-y-4">
-                  <div className="flex justify-between items-center py-2 border-b border-gray-200">
+                  <div className="flex justify-between items-center py-3 border-b border-gray-100">
                     <span className="font-pragmatica font-medium text-gray-700">Monday - Friday</span>
                     <span className="font-pragmatica text-gray-600">9:00 AM - 6:00 PM</span>
                   </div>
-                  <div className="flex justify-between items-center py-2 border-b border-gray-200">
+                  <div className="flex justify-between items-center py-3 border-b border-gray-100">
                     <span className="font-pragmatica font-medium text-gray-700">Saturday</span>
                     <span className="font-pragmatica text-gray-600">10:00 AM - 4:00 PM</span>
                   </div>
-                  <div className="flex justify-between items-center py-2 border-b border-gray-200">
+                  <div className="flex justify-between items-center py-3">
                     <span className="font-pragmatica font-medium text-gray-700">Sunday</span>
                     <span className="font-pragmatica text-gray-600">Closed</span>
                   </div>
@@ -254,34 +257,34 @@ export default function Contact() {
               </div>
 
               {/* Quick Services */}
-              <div>
+              <div className="bg-white p-8 rounded-xl border border-gray-100 shadow-sm">
                 <h3 className="font-cinzel text-2xl font-bold text-black mb-6">Our Services</h3>
-                <div className="space-y-4">
-                  <div className="flex items-start space-x-3">
-                    <div className="w-2 h-2 bg-[#EDD671] rounded-full mt-2 flex-shrink-0"></div>
+                <div className="space-y-6">
+                  <div className="flex items-start space-x-4">
+                    <div className="w-3 h-3 bg-gradient-to-br from-[#EDD671] to-[#d4c05a] rounded-full mt-2 flex-shrink-0"></div>
                     <div>
-                      <h4 className="font-pragmatica font-semibold text-gray-800">Custom Orders</h4>
+                      <h4 className="font-pragmatica font-semibold text-gray-800 mb-1">Custom Orders</h4>
                       <p className="font-pragmatica text-gray-600 text-sm">Bespoke luxury décor tailored to your preferences</p>
                     </div>
                   </div>
-                  <div className="flex items-start space-x-3">
-                    <div className="w-2 h-2 bg-[#EDD671] rounded-full mt-2 flex-shrink-0"></div>
+                  <div className="flex items-start space-x-4">
+                    <div className="w-3 h-3 bg-gradient-to-br from-[#EDD671] to-[#d4c05a] rounded-full mt-2 flex-shrink-0"></div>
                     <div>
-                      <h4 className="font-pragmatica font-semibold text-gray-800">Design Consultation</h4>
+                      <h4 className="font-pragmatica font-semibold text-gray-800 mb-1">Design Consultation</h4>
                       <p className="font-pragmatica text-gray-600 text-sm">Expert advice on luxury home styling</p>
                     </div>
                   </div>
-                  <div className="flex items-start space-x-3">
-                    <div className="w-2 h-2 bg-[#EDD671] rounded-full mt-2 flex-shrink-0"></div>
+                  <div className="flex items-start space-x-4">
+                    <div className="w-3 h-3 bg-gradient-to-br from-[#EDD671] to-[#d4c05a] rounded-full mt-2 flex-shrink-0"></div>
                     <div>
-                      <h4 className="font-pragmatica font-semibold text-gray-800">Nationwide Delivery</h4>
+                      <h4 className="font-pragmatica font-semibold text-gray-800 mb-1">Nationwide Delivery</h4>
                       <p className="font-pragmatica text-gray-600 text-sm">Premium shipping across Nigeria</p>
                     </div>
                   </div>
-                  <div className="flex items-start space-x-3">
-                    <div className="w-2 h-2 bg-[#EDD671] rounded-full mt-2 flex-shrink-0"></div>
+                  <div className="flex items-start space-x-4">
+                    <div className="w-3 h-3 bg-gradient-to-br from-[#EDD671] to-[#d4c05a] rounded-full mt-2 flex-shrink-0"></div>
                     <div>
-                      <h4 className="font-pragmatica font-semibold text-gray-800">Heritage Collections</h4>
+                      <h4 className="font-pragmatica font-semibold text-gray-800 mb-1">Heritage Collections</h4>
                       <p className="font-pragmatica text-gray-600 text-sm">Curated pieces celebrating Nigerian culture</p>
                     </div>
                   </div>
@@ -289,7 +292,7 @@ export default function Contact() {
               </div>
 
               {/* Location Card */}
-              <div className="bg-[#5C130C] p-8 text-white">
+              <div className="bg-gradient-to-br from-[#5C130C] to-[#170003] p-8 text-white rounded-xl shadow-2xl ring-1 ring-[#EDD671]/20">
                 <h3 className="font-cinzel text-2xl font-bold text-[#EDD671] mb-4">Visit Our Showroom</h3>
                 <p className="font-pragmatica text-gray-200 mb-6">
                   Experience our luxury collection in person at our Nigerian showroom. 
@@ -297,7 +300,7 @@ export default function Contact() {
                 </p>
                 <div className="space-y-3">
                   <div className="flex items-center space-x-3">
-                    <svg className="w-5 h-5 text-[#EDD671] flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <svg className="w-5 h-5 text-[#EDD671] flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
                     </svg>
@@ -325,13 +328,15 @@ export default function Contact() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
               href="/faq"
-              className="bg-[#EDD671] text-[#5C130C] px-8 py-4 font-pragmatica font-semibold text-lg hover:bg-[#d4c05a] transition-colors duration-300"
+              aria-label="View frequently asked questions"
+              className="bg-[#EDD671] text-[#5C130C] px-8 py-4 font-pragmatica font-semibold text-lg hover:bg-[#d4c05a] transition-colors duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#EDD671] focus-visible:ring-offset-2 rounded-lg"
             >
               View FAQ
             </Link>
             <Link
               href="/collection"
-              className="border-2 border-[#5C130C] text-[#5C130C] px-8 py-4 font-pragmatica font-semibold text-lg hover:bg-[#5C130C] hover:text-white transition-all duration-300"
+              aria-label="Browse our luxury collection"
+              className="border-2 border-[#5C130C] text-[#5C130C] px-8 py-4 font-pragmatica font-semibold text-lg hover:bg-[#5C130C] hover:text-white transition-all duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#5C130C] focus-visible:ring-offset-2 rounded-lg"
             >
               Browse Collection
             </Link>

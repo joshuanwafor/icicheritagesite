@@ -13,7 +13,7 @@ export default function Home() {
                               radial-gradient(circle at 80% 80%, rgba(237, 214, 113, 0.1) 0%, transparent 50%)`
           }}></div>
         </div>
-        
+
         <div className="relative z-10 text-center px-4 sm:px-6 lg:px-8 max-w-5xl mx-auto">
           <p className="font-pragmatica uppercase tracking-[0.3em] text-xs sm:text-sm text-[#EDD671] mb-3 animate-fade-in-up">ICIC Heritage</p>
           <h1 className="font-cinzel text-4xl sm:text-6xl lg:text-7xl font-bold text-white mb-4 animate-fade-in-up">
@@ -21,12 +21,12 @@ export default function Home() {
             <span className="block text-[#EDD671]">Meets Elegance</span>
           </h1>
           <div className="w-24 h-[2px] bg-[#EDD671] mx-auto mb-6 opacity-80 animate-fade-in-up delay-300"></div>
-          
+
           <p className="font-pragmatica text-lg sm:text-xl lg:text-2xl text-gray-200 mb-8 max-w-3xl mx-auto leading-relaxed animate-fade-in-up delay-600">
-            Discover luxury home décor that blends timeless Nigerian heritage with majestic craftsmanship. 
+            Discover luxury home décor that blends timeless Nigerian heritage with majestic craftsmanship.
             Every piece tells a story of prestige, elegance, and refinement.
           </p>
-          
+
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center animate-fade-in-up delay-900">
             <Link
               href="/collection"
@@ -44,7 +44,7 @@ export default function Home() {
             </Link>
           </div>
         </div>
-        
+
         {/* Scroll indicator */}
         <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce" aria-hidden="true">
           <svg className="w-7 h-7 text-[#EDD671]" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
@@ -117,11 +117,11 @@ export default function Home() {
                 Our <span className="text-[#EDD671]">Heritage Story</span>
               </h2>
               <p className="font-pragmatica text-lg text-gray-700 mb-6 leading-relaxed">
-                ICIC Heritage was founded with a vision to bring prestige and heritage into modern Nigerian homes. 
+                ICIC Heritage was founded with a vision to bring prestige and heritage into modern Nigerian homes.
                 We believe a home should be more than just a place — it should be a reflection of culture, elegance, and timeless luxury.
               </p>
               <p className="font-pragmatica text-lg text-gray-700 mb-8 leading-relaxed">
-                From our carefully selected décor pieces to our premium household items, every creation embodies 
+                From our carefully selected décor pieces to our premium household items, every creation embodies
                 <span className="font-semibold text-[#5C130C]"> royalty, craftsmanship, and enduring beauty</span>.
               </p>
               <Link
