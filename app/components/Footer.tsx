@@ -147,9 +147,23 @@ export default function Footer() {
       {/* Bottom Brand Strip */}
       <div className="bg-[#5C130C] py-4">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <p className="text-center text-[#EDD671] font-cinzel text-sm">
-            Capturing Heritage in a Prestigious and Royal Style
-          </p>
+          <div className="flex flex-col sm:flex-row justify-between items-center space-y-2 sm:space-y-0">
+            <p className="text-center sm:text-left text-[#EDD671] font-cinzel text-sm">
+              Capturing Heritage in a Prestigious and Royal Style
+            </p>
+            <div className="flex items-center space-x-2">
+              <span className="text-gray-300 font-pragmatica text-xs">Powered by</span>
+              <Link
+                href="https://shopkeeperpos.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-[#EDD671] hover:text-white transition-colors duration-200 font-pragmatica font-semibold text-sm"
+                aria-label="Visit Shopkeeper POS website"
+              >
+                Shopkeeper POS
+              </Link>
+            </div>
+          </div>
         </div>
       </div>
     </footer>
