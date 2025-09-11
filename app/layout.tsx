@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono, Playfair_Display } from "next/font/google";
+import { Geist, Geist_Mono, Cinzel } from "next/font/google";
 import "./globals.css";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -12,30 +14,36 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-const playfair = Playfair_Display({
-  variable: "--font-display",
+const cinzel = Cinzel({
+  variable: "--font-cinzel",
   subsets: ["latin"],
-  style: ["normal", "italic"],
+  weight: ["400", "500", "600", "700"],
+});
+
+// Using Inter as a substitute for Pragmatica (clean, classic readability)
+const pragmatica = Geist({
+  variable: "--font-pragmatica",
+  subsets: ["latin"],
 });
 
 export const metadata: Metadata = {
-  title: "ICICHeritage – Luxury Home Décor",
-  description: "ICICHeritage is a luxury home décor brand. Coming soon.",
-  keywords: ["ICICHeritage", "luxury", "home decor", "home décor", "interiors"],
+  title: "ICIC Heritage – Where Heritage Meets Elegance",
+  description: "Discover luxury home décor that blends timeless Nigerian heritage with majestic craftsmanship. Every piece tells a story of prestige, elegance, and refinement.",
+  keywords: ["ICIC Heritage", "luxury home decor", "Nigerian heritage", "majestic craftsmanship", "royal decor", "premium lifestyle", "elegant interiors"],
   metadataBase: new URL("https://icicheritageltd.com"),
   robots: { index: true, follow: true },
   openGraph: {
-    title: "ICICHeritage – Luxury Home Décor",
-    description: "A luxury home décor brand. Coming soon.",
+    title: "ICIC Heritage – Where Heritage Meets Elegance",
+    description: "Discover luxury home décor that blends timeless Nigerian heritage with majestic craftsmanship. Every piece tells a story of prestige, elegance, and refinement.",
     url: "https://icicheritageltd.com",
-    siteName: "ICICHeritage",
+    siteName: "ICIC Heritage",
     locale: "en_US",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "ICICHeritage – Luxury Home Décor",
-    description: "A luxury home décor brand. Coming soon.",
+    title: "ICIC Heritage – Where Heritage Meets Elegance",
+    description: "Luxury home décor that blends timeless Nigerian heritage with majestic craftsmanship.",
   },
 };
 
@@ -47,9 +55,13 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${playfair.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} ${cinzel.variable} ${pragmatica.variable} antialiased`}
       >
-        {children}
+        <Header />
+        <main className="min-h-screen">
+          {children}
+        </main>
+        <Footer />
       </body>
     </html>
   );

@@ -4,6 +4,14 @@
   --background: #ffffff;
   --foreground: #171717;
   --accent: #b08d57;
+  
+  /* ICIC Heritage Brand Colors */
+  --gold: #EDD671;
+  --black: #000000;
+  --deep-burgundy: #5C130C;
+  --deep-burgundy-dark: #170003;
+  --accent-brown: #A45D2B;
+  --accent-gray: #4D4D4D;
 }
 
 @theme inline {
@@ -12,6 +20,8 @@
   --color-accent: var(--accent);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+  --font-cinzel: var(--font-cinzel);
+  --font-pragmatica: var(--font-pragmatica);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -24,7 +34,7 @@
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-pragmatica), Arial, Helvetica, sans-serif;
 }
 
 .brand-gradient {
@@ -36,4 +46,58 @@ body {
   text-decoration-color: var(--accent);
   text-decoration-thickness: 2px;
   text-underline-offset: 6px;
+}
+
+/* Font utility classes */
+.font-cinzel {
+  font-family: var(--font-cinzel);
+}
+
+.font-pragmatica {
+  font-family: var(--font-pragmatica);
+}
+
+/* Brand color utilities */
+.text-heritage-gold {
+  color: var(--gold);
+}
+
+.bg-heritage-burgundy {
+  background-color: var(--deep-burgundy);
+}
+
+.bg-heritage-burgundy-dark {
+  background-color: var(--deep-burgundy-dark);
+}
+
+/* Custom animations */
+@keyframes fade-in-up {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in-up {
+  animation: fade-in-up 0.8s ease-out forwards;
+}
+
+.delay-300 {
+  animation-delay: 0.3s;
+}
+
+.delay-600 {
+  animation-delay: 0.6s;
+}
+
+.delay-900 {
+  animation-delay: 0.9s;
+}
+
+.delay-1200 {
+  animation-delay: 1.2s;
 }
