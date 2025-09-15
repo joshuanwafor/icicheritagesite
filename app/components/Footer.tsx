@@ -46,7 +46,7 @@ export default function Footer() {
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
         </svg>
       ),
-      text: 'Yingi, Rayfield – Jos South LGA, Plateau state',
+      text: 'ICIC Heritage Limited, After Mac Hez eatery, Beside Kalyto pharmacy, Yingi Rayfield, Jos. Plateau State',
       href: null
     },
   ];

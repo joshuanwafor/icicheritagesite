@@ -57,7 +57,7 @@ export default function Contact() {
         </svg>
       ),
       title: 'Visit Us',
-      details: ['Yingi, Rayfield – Jos South LGA, Plateau state'],
+      details: ['ICIC Heritage Limited', 'After Mac Hez eatery', 'Beside Kalyto pharmacy', 'Yingi Rayfield', 'Jos. Plateau State'],
       action: null,
       actionText: null
     }
