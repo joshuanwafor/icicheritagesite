@@ -127,116 +127,20 @@ export default function Contact() {
         </div>
       </section>
 
-      {/* Contact Form & Info Section */}
+      {/* Business Info Section */}
       <section className="py-20 bg-gradient-to-r from-gray-50 to-gray-100">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
-            {/* Contact Form */}
-            <div>
+          <div className="max-w-4xl mx-auto">
+            <div className="text-center mb-16">
               <h2 className="font-cinzel text-3xl sm:text-4xl font-bold text-black mb-8">
-                Send Us a <span className="text-[#EDD671]">Message</span>
+                Visit Our <span className="text-[#EDD671]">Showroom</span>
               </h2>
-              <p className="font-pragmatica text-lg text-gray-700 mb-8 leading-relaxed">
-                Fill out the contact form below and our team will reach out to you to discuss your luxury home décor needs.
+              <p className="font-pragmatica text-lg text-gray-700 leading-relaxed">
+                Experience our luxury collection in person and discover the perfect pieces for your home.
               </p>
-
-              <form onSubmit={handleSubmit} className="space-y-6">
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-                  <div>
-                    <label htmlFor="name" className="block font-pragmatica font-semibold text-gray-700 mb-2">
-                      Full Name *
-                    </label>
-                    <input
-                      type="text"
-                      id="name"
-                      name="name"
-                      required
-                      value={formData.name}
-                      onChange={handleChange}
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#EDD671] focus:border-[#EDD671] outline-none font-pragmatica transition-all duration-200 hover:border-gray-400"
-                      placeholder="Your full name"
-                    />
-                  </div>
-                  <div>
-                    <label htmlFor="phone" className="block font-pragmatica font-semibold text-gray-700 mb-2">
-                      Phone Number
-                    </label>
-                    <input
-                      type="tel"
-                      id="phone"
-                      name="phone"
-                      value={formData.phone}
-                      onChange={handleChange}
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#EDD671] focus:border-[#EDD671] outline-none font-pragmatica transition-all duration-200 hover:border-gray-400"
-                      placeholder="Your phone number"
-                    />
-                  </div>
-                </div>
-
-                <div>
-                  <label htmlFor="email" className="block font-pragmatica font-semibold text-gray-700 mb-2">
-                    Email Address *
-                  </label>
-                  <input
-                    type="email"
-                    id="email"
-                    name="email"
-                    required
-                    value={formData.email}
-                    onChange={handleChange}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#EDD671] focus:border-[#EDD671] outline-none font-pragmatica transition-all duration-200 hover:border-gray-400"
-                    placeholder="your.email@example.com"
-                  />
-                </div>
-
-                <div>
-                  <label htmlFor="subject" className="block font-pragmatica font-semibold text-gray-700 mb-2">
-                    Subject *
-                  </label>
-                  <select
-                    id="subject"
-                    name="subject"
-                    required
-                    value={formData.subject}
-                    onChange={handleChange}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#EDD671] focus:border-[#EDD671] outline-none font-pragmatica transition-all duration-200 hover:border-gray-400"
-                  >
-                    <option value="">Select a subject</option>
-                    <option value="general">General Inquiry</option>
-                    <option value="collection">Collection Information</option>
-                    <option value="custom">Custom Order</option>
-                    <option value="partnership">Partnership Opportunity</option>
-                    <option value="support">Customer Support</option>
-                  </select>
-                </div>
-
-                <div>
-                  <label htmlFor="message" className="block font-pragmatica font-semibold text-gray-700 mb-2">
-                    Message *
-                  </label>
-                  <textarea
-                    id="message"
-                    name="message"
-                    required
-                    rows={6}
-                    value={formData.message}
-                    onChange={handleChange}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#EDD671] focus:border-[#EDD671] outline-none font-pragmatica resize-vertical transition-all duration-200 hover:border-gray-400"
-                    placeholder="Tell us about your luxury home décor needs..."
-                  ></textarea>
-                </div>
-
-                <button
-                  type="submit"
-                  className="w-full bg-[#5C130C] text-white px-8 py-4 font-pragmatica font-semibold text-lg hover:bg-[#170003] transition-colors duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#EDD671] focus-visible:ring-offset-2 rounded-lg"
-                >
-                  Send Message
-                </button>
-              </form>
             </div>
 
-            {/* Additional Info & Business Hours */}
-            <div className="space-y-12">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
               {/* Business Hours */}
               <div className="bg-white p-8 rounded-xl border border-gray-100 shadow-sm">
                 <h3 className="font-cinzel text-2xl font-bold text-black mb-6">Business Hours</h3>
@@ -290,26 +194,26 @@ export default function Contact() {
                   </div>
                 </div>
               </div>
+            </div>
 
-              {/* Location Card */}
-              <div className="bg-gradient-to-br from-[#5C130C] to-[#170003] p-8 text-white rounded-xl shadow-2xl ring-1 ring-[#EDD671]/20">
-                <h3 className="font-cinzel text-2xl font-bold text-[#EDD671] mb-4">Visit Our Showroom</h3>
-                <p className="font-pragmatica text-gray-200 mb-6">
-                  Experience our luxury collection in person at our Nigerian showroom. 
-                  See the craftsmanship and quality up close.
-                </p>
-                <div className="space-y-3">
-                  <div className="flex items-center space-x-3">
-                    <svg className="w-5 h-5 text-[#EDD671] flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
-                    </svg>
-                    <span className="font-pragmatica">Yingi, Rayfield – Jos South LGA, Plateau state</span>
-                  </div>
-                  <p className="font-pragmatica text-sm text-gray-300 ml-8">
-                    Call ahead to schedule a private viewing appointment
-                  </p>
+            {/* Location Card */}
+            <div className="mt-12 bg-gradient-to-br from-[#5C130C] to-[#170003] p-8 text-white rounded-xl shadow-2xl ring-1 ring-[#EDD671]/20">
+              <h3 className="font-cinzel text-2xl font-bold text-[#EDD671] mb-4">Visit Our Showroom</h3>
+              <p className="font-pragmatica text-gray-200 mb-6">
+                Experience our luxury collection in person at our Nigerian showroom. 
+                See the craftsmanship and quality up close.
+              </p>
+              <div className="space-y-3">
+                <div className="flex items-center space-x-3">
+                  <svg className="w-5 h-5 text-[#EDD671] flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                  </svg>
+                  <span className="font-pragmatica">Yingi, Rayfield – Jos South LGA, Plateau state</span>
                 </div>
+                <p className="font-pragmatica text-sm text-gray-300 ml-8">
+                  Call ahead to schedule a private viewing appointment
+                </p>
               </div>
             </div>
           </div>
