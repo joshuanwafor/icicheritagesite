@@ -34,8 +34,8 @@ export default function Contact() {
         </svg>
       ),
       title: 'Call Us',
-      details: ['+234 805 494 5656'],
-      action: 'tel:+2348054945656',
+      details: ['+234 916 075 7433'],
+      action: 'tel:+2349160757433',
       actionText: 'Call Now'
     },
     {
@@ -45,8 +45,8 @@ export default function Contact() {
         </svg>
       ),
       title: 'Email Us',
-      details: ['info@icicheritage.com'],
-      action: 'mailto:info@icicheritage.com',
+      details: ['icicheritageltd0@gmail.com'],
+      action: 'mailto:icicheritageltd0@gmail.com',
       actionText: 'Send Email'
     },
     {
@@ -57,7 +57,7 @@ export default function Contact() {
         </svg>
       ),
       title: 'Visit Us',
-      details: ['Yingi, Shaka Rd, Jos, Plateau State, Nigeria'],
+      details: ['Yingi, Rayfield – Jos South LGA, Plateau state'],
       action: null,
       actionText: null
     }
@@ -304,7 +304,7 @@ export default function Contact() {
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
                     </svg>
-                    <span className="font-pragmatica">ICIC Heritage – Nigeria</span>
+                    <span className="font-pragmatica">Yingi, Rayfield – Jos South LGA, Plateau state</span>
                   </div>
                   <p className="font-pragmatica text-sm text-gray-300 ml-8">
                     Call ahead to schedule a private viewing appointment

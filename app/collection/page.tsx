@@ -28,15 +28,6 @@ function ProductCard({ product, status }: ProductCardProps) {
   const [imageLoaded, setImageLoaded] = useState(false);
   const [imageError, setImageError] = useState(false);
 
-  const formatPrice = (amount: number) => {
-    return new Intl.NumberFormat('en-NG', {
-      style: 'currency',
-      currency: 'NGN',
-      minimumFractionDigits: 0,
-      maximumFractionDigits: 0
-    }).format(amount);
-  };
-
   return (
     <div className="bg-white shadow-lg hover:shadow-xl transition-all duration-300 group rounded-xl overflow-hidden border border-gray-100">
 
@@ -60,11 +51,6 @@ function ProductCard({ product, status }: ProductCardProps) {
             {product.description}
           </p>
         )}
-        <div className="mb-4">
-          <span className="font-pragmatica text-2xl font-bold text-[#5C130C]">
-            {formatPrice(product.amount)}
-          </span>
-        </div>
 
         {/* In-Store Purchase Notice */}
         <div className="mb-4 p-3 bg-gradient-to-r from-[#EDD671]/10 to-[#d4c05a]/10 rounded-lg border border-[#EDD671]/20">
