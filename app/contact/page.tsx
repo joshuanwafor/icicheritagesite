@@ -34,8 +34,8 @@ export default function Contact() {
         </svg>
       ),
       title: 'Call Us',
-      details: ['+234 916 075 7433'],
-      action: 'tel:+2349160757433',
+      details: ['+234 813 298 5496', '+234 805 494 5656'],
+      action: 'tel:+2348132985496',
       actionText: 'Call Now'
     },
     {
