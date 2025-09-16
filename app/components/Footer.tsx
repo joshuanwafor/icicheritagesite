@@ -46,11 +46,11 @@ export default function Footer() {
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
         </svg>
       ),
-      text: 'ICIC Heritage Limited, After Mac Hez eatery, Beside Kalyto pharmacy, Yingi Rayfield, Jos. Plateau State',
+      text: 'ICIC HERITAGE LIMITED, AFTER MAC HEZ EATERY, OPPOSITE AIR FORCE BOY\'S, YINGI RAYFIELD ROAD, JOS, PLATEAU STATE. ',
       href: null
     },
   ];
-
+  
   const socialMedia = [
     {
       name: 'Facebook',
