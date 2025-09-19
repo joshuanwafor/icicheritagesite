@@ -108,6 +108,303 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Scrolling Collections Gallery */}
+      <section className="py-20 bg-gradient-to-br from-[#170003] via-[#5C130C] to-[#170003] overflow-hidden">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-16">
+          <div className="text-center">
+            <h2 className="font-cinzel text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-6">
+              Explore Our <span className="text-[#EDD671]">Collections</span>
+            </h2>
+            <div className="w-24 h-1 bg-[#EDD671] mx-auto mb-6"></div>
+            <p className="font-pragmatica text-lg text-gray-200 max-w-3xl mx-auto leading-relaxed">
+              Discover the exquisite craftsmanship and luxury that defines every piece in our heritage collection
+            </p>
+          </div>
+        </div>
+
+        {/* Scrolling Images Container */}
+        <div className="relative">
+          {/* First Row - Left to Right */}
+          <div className="flex animate-scroll-left mb-8">
+            <div className="flex space-x-6 min-w-max">
+              {/* First set of images */}
+              <div className="group relative w-80 h-64 rounded-xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:scale-105">
+                <img
+                  src="/images/IMG_0089_red.JPG"
+                  alt="ICIC Heritage Collection"
+                  className="w-full h-full object-cover"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                  <div className="absolute bottom-4 left-4 text-white">
+                    <p className="font-cinzel text-lg font-semibold">Heritage Collection</p>
+                    <p className="font-pragmatica text-sm opacity-90">Luxury Home Décor</p>
+                  </div>
+                </div>
+              </div>
+              
+              <div className="group relative w-80 h-64 rounded-xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:scale-105">
+                <img
+                  src="/images/IMG_0090.JPG"
+                  alt="ICIC Heritage Collection"
+                  className="w-full h-full object-cover"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                  <div className="absolute bottom-4 left-4 text-white">
+                    <p className="font-cinzel text-lg font-semibold">Royal Elegance</p>
+                    <p className="font-pragmatica text-sm opacity-90">Premium Quality</p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="group relative w-80 h-64 rounded-xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:scale-105">
+                <img
+                  src="/images/IMG_0091.JPG"
+                  alt="ICIC Heritage Collection"
+                  className="w-full h-full object-cover"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                  <div className="absolute bottom-4 left-4 text-white">
+                    <p className="font-cinzel text-lg font-semibold">Timeless Beauty</p>
+                    <p className="font-pragmatica text-sm opacity-90">Crafted Excellence</p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="group relative w-80 h-64 rounded-xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:scale-105">
+                <img
+                  src="/images/IMG_0092.JPG"
+                  alt="ICIC Heritage Collection"
+                  className="w-full h-full object-cover"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                  <div className="absolute bottom-4 left-4 text-white">
+                    <p className="font-cinzel text-lg font-semibold">Modern Heritage</p>
+                    <p className="font-pragmatica text-sm opacity-90">Sophisticated Design</p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="group relative w-80 h-64 rounded-xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:scale-105">
+                <img
+                  src="/images/IMG_0094.JPG"
+                  alt="ICIC Heritage Collection"
+                  className="w-full h-full object-cover"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                  <div className="absolute bottom-4 left-4 text-white">
+                    <p className="font-cinzel text-lg font-semibold">Luxury Living</p>
+                    <p className="font-pragmatica text-sm opacity-90">Exclusive Pieces</p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="group relative w-80 h-64 rounded-xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:scale-105">
+                <img
+                  src="/images/IMG_0095.JPG"
+                  alt="ICIC Heritage Collection"
+                  className="w-full h-full object-cover"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                  <div className="absolute bottom-4 left-4 text-white">
+                    <p className="font-cinzel text-lg font-semibold">Artisan Craft</p>
+                    <p className="font-pragmatica text-sm opacity-90">Handpicked Selection</p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Duplicate set for seamless loop */}
+              <div className="group relative w-80 h-64 rounded-xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:scale-105">
+                <img
+                  src="/images/IMG_0089_red.JPG"
+                  alt="ICIC Heritage Collection"
+                  className="w-full h-full object-cover"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                  <div className="absolute bottom-4 left-4 text-white">
+                    <p className="font-cinzel text-lg font-semibold">Heritage Collection</p>
+                    <p className="font-pragmatica text-sm opacity-90">Luxury Home Décor</p>
+                  </div>
+                </div>
+              </div>
+              
+              <div className="group relative w-80 h-64 rounded-xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:scale-105">
+                <img
+                  src="/images/IMG_0090.JPG"
+                  alt="ICIC Heritage Collection"
+                  className="w-full h-full object-cover"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                  <div className="absolute bottom-4 left-4 text-white">
+                    <p className="font-cinzel text-lg font-semibold">Royal Elegance</p>
+                    <p className="font-pragmatica text-sm opacity-90">Premium Quality</p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="group relative w-80 h-64 rounded-xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:scale-105">
+                <img
+                  src="/images/IMG_0091.JPG"
+                  alt="ICIC Heritage Collection"
+                  className="w-full h-full object-cover"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                  <div className="absolute bottom-4 left-4 text-white">
+                    <p className="font-cinzel text-lg font-semibold">Timeless Beauty</p>
+                    <p className="font-pragmatica text-sm opacity-90">Crafted Excellence</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Second Row - Right to Left */}
+          <div className="flex animate-scroll-right">
+            <div className="flex space-x-6 min-w-max">
+              {/* Second set of images */}
+              <div className="group relative w-80 h-64 rounded-xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:scale-105">
+                <img
+                  src="/images/IMG_0096.JPG"
+                  alt="ICIC Heritage Collection"
+                  className="w-full h-full object-cover"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                  <div className="absolute bottom-4 left-4 text-white">
+                    <p className="font-cinzel text-lg font-semibold">Classic Design</p>
+                    <p className="font-pragmatica text-sm opacity-90">Nigerian Heritage</p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="group relative w-80 h-64 rounded-xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:scale-105">
+                <img
+                  src="/images/IMG_0098.JPG"
+                  alt="ICIC Heritage Collection"
+                  className="w-full h-full object-cover"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                  <div className="absolute bottom-4 left-4 text-white">
+                    <p className="font-cinzel text-lg font-semibold">Premium Finish</p>
+                    <p className="font-pragmatica text-sm opacity-90">Luxury Details</p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="group relative w-80 h-64 rounded-xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:scale-105">
+                <img
+                  src="/images/IMG_0099.JPG"
+                  alt="ICIC Heritage Collection"
+                  className="w-full h-full object-cover"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                  <div className="absolute bottom-4 left-4 text-white">
+                    <p className="font-cinzel text-lg font-semibold">Elegant Décor</p>
+                    <p className="font-pragmatica text-sm opacity-90">Sophisticated Style</p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="group relative w-80 h-64 rounded-xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:scale-105">
+                <img
+                  src="/images/IMG_0102.JPG"
+                  alt="ICIC Heritage Collection"
+                  className="w-full h-full object-cover"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                  <div className="absolute bottom-4 left-4 text-white">
+                    <p className="font-cinzel text-lg font-semibold">Royal Touch</p>
+                    <p className="font-pragmatica text-sm opacity-90">Majestic Beauty</p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="group relative w-80 h-64 rounded-xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:scale-105">
+                <img
+                  src="/images/IMG_0104.JPG"
+                  alt="ICIC Heritage Collection"
+                  className="w-full h-full object-cover"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                  <div className="absolute bottom-4 left-4 text-white">
+                    <p className="font-cinzel text-lg font-semibold">Cultural Pride</p>
+                    <p className="font-pragmatica text-sm opacity-90">Heritage Inspired</p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="group relative w-80 h-64 rounded-xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:scale-105">
+                <img
+                  src="/images/IMG_0107.JPG"
+                  alt="ICIC Heritage Collection"
+                  className="w-full h-full object-cover"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                  <div className="absolute bottom-4 left-4 text-white">
+                    <p className="font-cinzel text-lg font-semibold">Luxury Lifestyle</p>
+                    <p className="font-pragmatica text-sm opacity-90">Exclusive Collection</p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Duplicate set for seamless loop */}
+              <div className="group relative w-80 h-64 rounded-xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:scale-105">
+                <img
+                  src="/images/IMG_0096.JPG"
+                  alt="ICIC Heritage Collection"
+                  className="w-full h-full object-cover"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                  <div className="absolute bottom-4 left-4 text-white">
+                    <p className="font-cinzel text-lg font-semibold">Classic Design</p>
+                    <p className="font-pragmatica text-sm opacity-90">Nigerian Heritage</p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="group relative w-80 h-64 rounded-xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:scale-105">
+                <img
+                  src="/images/IMG_0098.JPG"
+                  alt="ICIC Heritage Collection"
+                  className="w-full h-full object-cover"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                  <div className="absolute bottom-4 left-4 text-white">
+                    <p className="font-cinzel text-lg font-semibold">Premium Finish</p>
+                    <p className="font-pragmatica text-sm opacity-90">Luxury Details</p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="group relative w-80 h-64 rounded-xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:scale-105">
+                <img
+                  src="/images/IMG_0099.JPG"
+                  alt="ICIC Heritage Collection"
+                  className="w-full h-full object-cover"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                  <div className="absolute bottom-4 left-4 text-white">
+                    <p className="font-cinzel text-lg font-semibold">Elegant Décor</p>
+                    <p className="font-pragmatica text-sm opacity-90">Sophisticated Style</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Call to Action for Gallery */}
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center mt-16">
+          <Link
+            href="/gallery"
+            className="inline-flex items-center bg-[#EDD671] text-[#170003] px-8 py-4 font-pragmatica font-semibold text-lg hover:bg-[#d4c05a] transition-colors duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1 rounded-lg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#EDD671] focus-visible:ring-offset-2 focus-visible:ring-offset-[#170003]"
+          >
+            View Full Gallery
+            <svg className="ml-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+            </svg>
+          </Link>
+        </div>
+      </section>
+
       {/* About Preview Section */}
       <section className="py-20 bg-gradient-to-r from-gray-50 to-gray-100">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
