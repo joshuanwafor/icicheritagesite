@@ -37,7 +37,7 @@ export default function Footer() {
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
         </svg>
       ),
-      text: 'No  52 Gyang plaza , Opp Air Force Boys, Yingi Rayfield Road, Jos, Plateau State. ',
+      text: 'No  52 Dangyang plaza , Opp Air Force Boys, Yingi Rayfield Road, Jos, Plateau State. ',
       href: null
     },
   ];
