@@ -154,7 +154,6 @@ export default function Gallery() {
                   allowFullScreen
                 ></iframe>
               </div>
-              <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-xl"></div>
             </div>
 
             {/* Video 2 */}
@@ -169,7 +168,6 @@ export default function Gallery() {
                   allowFullScreen
                 ></iframe>
               </div>
-              <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-xl"></div>
             </div>
 
             {/* Video 3 */}
@@ -184,7 +182,6 @@ export default function Gallery() {
                   allowFullScreen
                 ></iframe>
               </div>
-              <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-xl"></div>
             </div>
 
             {/* Video 4 */}
