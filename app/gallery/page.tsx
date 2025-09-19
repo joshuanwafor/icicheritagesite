@@ -142,6 +142,20 @@ export default function Gallery() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            {/* Featured Video - YouTube Shorts */}
+            <div className="group relative overflow-hidden rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300">
+              <div className="aspect-video bg-black rounded-xl overflow-hidden">
+                <iframe
+                  src="https://www.youtube.com/embed/06oMBKCfy5g"
+                  title="ICIC Heritage Featured Showcase"
+                  className="w-full h-full"
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                ></iframe>
+              </div>
+            </div>
+
             {/* Video 1 */}
             <div className="group relative overflow-hidden rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300">
               <div className="aspect-video bg-black rounded-xl overflow-hidden">

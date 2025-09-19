@@ -91,7 +91,6 @@ export default function About() {
                 </h3>
                 <div className="w-16 h-1 bg-[#EDD671] mb-6"></div>
               </div>
-
               <div className="space-y-6">
                 <p className="font-pragmatica text-lg text-gray-700 leading-relaxed">
                   At the helm of ICIC Heritage stands <strong className="text-[#5C130C]">Mrs. Ruth Edokpayi</strong>, 
