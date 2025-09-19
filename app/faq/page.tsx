@@ -38,7 +38,7 @@ export default function FAQ() {
     {
       id: 'contact-team',
       question: 'How can I reach your team?',
-      answer: 'You can call us at +234 805 494 5656 or +234 703 852 1520, email us at info@icicheritage.com, or use our contact form. Our support team is always available to assist.',
+      answer: 'You can call us at +234 813 298 5496, email us at info@icicheritage.com, or use our contact form. Our support team is always available to assist.',
       category: 'contact'
     },
     // Additional relevant FAQs
@@ -274,7 +274,7 @@ export default function FAQ() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
                 </svg>
                 <p className="font-pragmatica text-gray-300 text-sm">Call Us</p>
-                <p className="font-pragmatica text-white font-medium">+234 805 494 5656</p>
+                <p className="font-pragmatica text-white font-medium">+234 813 298 5496</p>
               </div>
               <div>
                 <svg className="w-8 h-8 text-[#EDD671] mx-auto mb-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">

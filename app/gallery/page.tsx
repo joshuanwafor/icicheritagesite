@@ -127,6 +127,99 @@ export default function Gallery() {
         </div>
       )}
 
+      {/* Video Gallery Section */}
+      <div className="bg-gradient-to-r from-gray-50 to-white py-20">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="font-cinzel text-3xl sm:text-4xl lg:text-5xl font-bold text-black mb-6">
+              Heritage in <span className="text-[#EDD671]">Motion</span>
+            </h2>
+            <div className="w-24 h-1 bg-[#EDD671] mx-auto mb-6"></div>
+            <p className="font-pragmatica text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed">
+              Experience our luxury pieces through exclusive video showcases that capture the essence 
+              of craftsmanship, elegance, and heritage in every detail.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            {/* Video 1 */}
+            <div className="group relative overflow-hidden rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300">
+              <div className="aspect-video bg-black rounded-xl overflow-hidden">
+                <iframe
+                  src="https://www.youtube.com/embed/Z94JL-Y5rk0"
+                  title="ICIC Heritage Showcase 1"
+                  className="w-full h-full"
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                ></iframe>
+              </div>
+              <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-xl"></div>
+            </div>
+
+            {/* Video 2 */}
+            <div className="group relative overflow-hidden rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300">
+              <div className="aspect-video bg-black rounded-xl overflow-hidden">
+                <iframe
+                  src="https://www.youtube.com/embed/MNjPkkiJSEs"
+                  title="ICIC Heritage Showcase 2"
+                  className="w-full h-full"
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                ></iframe>
+              </div>
+              <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-xl"></div>
+            </div>
+
+            {/* Video 3 */}
+            <div className="group relative overflow-hidden rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300">
+              <div className="aspect-video bg-black rounded-xl overflow-hidden">
+                <iframe
+                  src="https://www.youtube.com/embed/PW_uD2s6vFQ"
+                  title="ICIC Heritage Showcase 3"
+                  className="w-full h-full"
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                ></iframe>
+              </div>
+              <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-xl"></div>
+            </div>
+
+            {/* Video 4 */}
+            <div className="group relative overflow-hidden rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300">
+              <div className="aspect-video bg-black rounded-xl overflow-hidden">
+                <iframe
+                  src="https://www.youtube.com/embed/MFKAUUj8bpc"
+                  title="ICIC Heritage Showcase 4"
+                  className="w-full h-full"
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                ></iframe>
+              </div>
+              <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-xl"></div>
+            </div>
+          </div>
+
+          {/* Video Gallery Description */}
+          <div className="mt-16 text-center">
+            <div className="bg-white p-8 rounded-2xl shadow-lg border border-gray-100 max-w-4xl mx-auto">
+              <h3 className="font-cinzel text-2xl font-bold text-black mb-4">
+                Discover Our <span className="text-[#EDD671]">Craftsmanship</span>
+              </h3>
+              <p className="font-pragmatica text-gray-700 leading-relaxed">
+                These exclusive videos showcase the intricate details, premium materials, and exceptional 
+                craftsmanship that define every ICIC Heritage piece. From traditional techniques to modern 
+                luxury, witness how we bring <strong className="text-[#5C130C]">heritage and elegance</strong> 
+                into contemporary Nigerian homes.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
       {/* Call to Action */}
       <div className="bg-[#5C130C] py-16">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
