@@ -8,6 +8,11 @@ export default function Gallery() {
 
   // List of all images in the public/images folder
   const images = [
+    'WhatsApp Image 2025-09-22 at 23.05.35_0ea28628.jpg',
+    'WhatsApp Image 2025-09-22 at 23.05.35_11baeac2.jpg',
+    'WhatsApp Image 2025-09-22 at 23.05.35_ac9bb808.jpg',
+    'WhatsApp Image 2025-09-22 at 23.05.36_31e29593.jpg',
+    'WhatsApp Image 2025-09-22 at 23.05.36_c7440753.jpg',
     'IMG_0089_red.JPG',
     'IMG_0090.JPG',
     'IMG_0091.JPG',
